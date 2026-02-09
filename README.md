@@ -20,13 +20,13 @@ DOI: [10.1109/ACIT62805.2024.108770155]
 
 Below are raw noise waveform segments captured from two Arduino Uno boards of the same make, model, and running identical firmware. Even though both devices run the same firmware and hardware, their intrinsic electrical noise patterns are measurably different due to manufacturing variations.
 
-### Short Segment (zoomed view)
-
-![](assets/waveform-short.png)
-
 ### Long Segment (full window)
 
 ![](assets/waveform-long.png)
+
+### Short Segment (zoomed view)
+
+![](assets/waveform-short.png)
 
 The plots show time-domain noise waveforms:
 - X-axis: time progression (sampled at 1 MS/s)
