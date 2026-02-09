@@ -15,6 +15,33 @@ DOI: [10.1109/ACIT62805.2024.108770155]
 - Achieved 94% Accuracy.
 
 ---
+
+## 📈 Signal Visualization (Device Fingerprints)
+
+Below are raw noise waveform segments captured from two Arduino Uno boards of same make, model and running same code. Even though both devices run the same firmware and hardware, their intrinsic electrical noise patterns are measurably different due to manufacturing variations.
+
+### Short Segment (zoomed view)
+
+![](assets/waveform-short.png)
+
+### Long Segment (full window)
+
+![](assets/waveform-long.png)
+
+The plots show time-domain noise waveforms:
+- X-axis: time progression (samples at 1 MS/s)
+- Y-axis: measured voltage amplitude
+
+### Observations
+
+- Each board exhibits unique transient spikes and noise bursts
+- Amplitude fluctuations differ across devices
+- Noise statistics and temporal structure are not identical
+- These differences form a hardware "fingerprint"
+
+The CNN model learns these subtle time-domain characteristics to reliably distinguish between devices.
+
+---
 ## Results
 - **Test Samples**: 360  
 - **Accuracy**: 94%  
