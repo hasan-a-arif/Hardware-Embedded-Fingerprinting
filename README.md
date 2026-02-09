@@ -1,5 +1,5 @@
 ## Hardware Fingerprinting based on Electric Noise
-This repository presents a unique approach to identifying embedded devices using intrinsic electrical noise extracted from signals. We demonstrate that even identical Arduino Uno boards produces distinguishable noise patterns due to manufacturing imperfections.
+This repository presents a unique approach to identifying embedded devices using intrinsic electrical noise extracted from signals. We demonstrate that even identical Arduino Uno boards produce distinguishable noise patterns due to manufacturing imperfections.
 
 📄 **Published Work**:  
 TITLE: [Hardware Embedded Fingerprinting Based on Electric Noise – ACIT 2025](https://ieeexplore.ieee.org/document/10877015)  
@@ -18,7 +18,7 @@ DOI: [10.1109/ACIT62805.2024.108770155]
 
 ## 📈 Signal Visualization (Device Fingerprints)
 
-Below are raw noise waveform segments captured from two Arduino Uno boards of same make, model and running same code. Even though both devices run the same firmware and hardware, their intrinsic electrical noise patterns are measurably different due to manufacturing variations.
+Below are raw noise waveform segments captured from two Arduino Uno boards of the same make, model, and running identical firmware. Even though both devices run the same firmware and hardware, their intrinsic electrical noise patterns are measurably different due to manufacturing variations.
 
 ### Short Segment (zoomed view)
 
@@ -29,7 +29,7 @@ Below are raw noise waveform segments captured from two Arduino Uno boards of sa
 ![](assets/waveform-long.png)
 
 The plots show time-domain noise waveforms:
-- X-axis: time progression (samples at 1 MS/s)
+- X-axis: time progression (sampled at 1 MS/s)
 - Y-axis: measured voltage amplitude
 
 ### Observations
@@ -48,6 +48,10 @@ The CNN model learns these subtle time-domain characteristics to reliably distin
 - **Confusion Matrix**:
   - Arduino 1: 178/180 correct
   - Arduino 2: 161/180 correct
+
+### Confusion Matrix
+
+![](Graphs/Confusion_Matrix.png)
 
 ---
 ## Acknowledgments
